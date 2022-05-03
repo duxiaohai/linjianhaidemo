@@ -3,33 +3,33 @@ spring:
     #type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.cj.jdbc.Driver
     druid:
-      # Ö÷¿âÊı¾İÔ´
+      # ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´
       master:
         url: jdbc:mysql://localhost:3306/linjianhaidemo?useSSL=false&useUnicode=true&characterEncoding=utf-8&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
         username: root
         password: 123456
-      # ´Ó¿âÊı¾İÔ´
+      # ï¿½Ó¿ï¿½ï¿½ï¿½ï¿½ï¿½Ô´
       slave:
-        # ´ÓÊı¾İÔ´¿ª¹Ø/Ä¬ÈÏ¹Ø±Õ
+        # ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½ï¿½ï¿½/Ä¬ï¿½Ï¹Ø±ï¿½
         enabled: false
         url:
         username:
         password:
-      # ³õÊ¼Á¬½ÓÊı
+      # ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
       initialSize: 5
-      # ×îĞ¡Á¬½Ó³ØÊıÁ¿
+      # ï¿½ï¿½Ğ¡ï¿½ï¿½ï¿½Ó³ï¿½ï¿½ï¿½ï¿½ï¿½
       minIdle: 10
-      # ×î´óÁ¬½Ó³ØÊıÁ¿
+      # ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó³ï¿½ï¿½ï¿½ï¿½ï¿½
       maxActive: 20
-      # ÅäÖÃ»ñÈ¡Á¬½ÓµÈ´ı³¬Ê±µÄÊ±¼ä
+      # ï¿½ï¿½ï¿½Ã»ï¿½È¡ï¿½ï¿½ï¿½ÓµÈ´ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ê±ï¿½ï¿½
       maxWait: 60000
-      # ÅäÖÃ¼ä¸ô¶à¾Ã²Å½øĞĞÒ»´Î¼ì²â£¬¼ì²âĞèÒª¹Ø±ÕµÄ¿ÕÏĞÁ¬½Ó£¬µ¥Î»ÊÇºÁÃë
+      # ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½Ã²Å½ï¿½ï¿½ï¿½Ò»ï¿½Î¼ï¿½â£¬ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½Ø±ÕµÄ¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó£ï¿½ï¿½ï¿½Î»ï¿½Çºï¿½ï¿½ï¿½
       timeBetweenEvictionRunsMillis: 60000
-      # ÅäÖÃÒ»¸öÁ¬½ÓÔÚ³ØÖĞ×îĞ¡Éú´æµÄÊ±¼ä£¬µ¥Î»ÊÇºÁÃë
+      # ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú³ï¿½ï¿½ï¿½ï¿½ï¿½Ğ¡ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ä£¬ï¿½ï¿½Î»ï¿½Çºï¿½ï¿½ï¿½
       minEvictableIdleTimeMillis: 300000
-      # ÅäÖÃÒ»¸öÁ¬½ÓÔÚ³ØÖĞ×î´óÉú´æµÄÊ±¼ä£¬µ¥Î»ÊÇºÁÃë
+      # ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ä£¬ï¿½ï¿½Î»ï¿½Çºï¿½ï¿½ï¿½
       maxEvictableIdleTimeMillis: 900000
-      # ÅäÖÃ¼ì²âÁ¬½ÓÊÇ·ñÓĞĞ§
+      # ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ğ§
       validationQuery: SELECT 1 FROM DUAL
       testWhileIdle: true
       testOnBorrow: false
@@ -38,19 +38,26 @@ spring:
         enabled: true
       statViewServlet:
         enabled: true
-        # ÉèÖÃ°×Ãûµ¥£¬²»ÌîÔòÔÊĞíËùÓĞ·ÃÎÊ
+        # ï¿½ï¿½ï¿½Ã°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ·ï¿½ï¿½ï¿½
         allow:
         url-pattern: /druid/*
-        # ¿ØÖÆÌ¨¹ÜÀíÓÃ»§ÃûºÍÃÜÂë
+        # ï¿½ï¿½ï¿½ï¿½Ì¨ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         login-username:
         login-password:
       filter:
         stat:
           enabled: true
-          # ÂıSQL¼ÇÂ¼
+          # ï¿½ï¿½SQLï¿½ï¿½Â¼
           log-slow-sql: true
           slow-sql-millis: 1000
           merge-sql: true
         wall:
           config:
             multi-statement-allow: true
+
+# es æœåŠ¡åœ°å€
+elasticsearch:
+  host: 127.0.0.1
+  # es æœåŠ¡ç«¯å£
+  port: 9200
+  # é…ç½®æ—¥å¿—çº§åˆ«,å¼€å¯ debug æ—¥å¿—
