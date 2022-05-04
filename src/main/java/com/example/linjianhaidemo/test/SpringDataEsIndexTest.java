@@ -33,6 +33,7 @@ public class SpringDataEsIndexTest {
         boolean flag = elasticsearchRestTemplate.deleteIndex(Product.class);
         System.out.println("删除索引：" + flag);
         System.out.println("ccccc进来了");
+
     }
 
 }
