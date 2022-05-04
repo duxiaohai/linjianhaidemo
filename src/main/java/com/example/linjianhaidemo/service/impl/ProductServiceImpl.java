@@ -11,4 +11,5 @@ import org.springframework.data.elasticsearch.core.query.Query;
 import java.util.Optional;
 
 public class ProductServiceImpl {
+
 }
